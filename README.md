@@ -15,7 +15,7 @@ In this folder you will find:
 9. **norato_bar.m**: matlab function that provide the distance of a component boundary frome the component center in function of the polar coordinate angle. This is needed for component plots.
 
 # References
-[1] Coniglio Simone et al. "Generalized Geometry Projection a unified approach for geometric feature based topology optimization."
+[1] Coniglio, Simone et al. "Generalized Geometry Projection a unified approach for geometric feature based topology optimization."
 
 [2] Svanberg, Krister. "MMA and GCMMA, versions September 2007." Optimization and Systems Theory 104 (2007).
 
