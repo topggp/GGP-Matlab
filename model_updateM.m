@@ -1,10 +1,10 @@
 function [E,dE_ddelta,dE_dm]=model_updateM(delta,p,X)
+%update the Young Modulus on the base of delta
 m=X(6:6:end);
 nc=length(m);
 m=repmat(m(:),1,size(delta,2));
 switch p.method
     case 'MMC'
-        %update the Young Modulus on the base of delta
         E=p.E0*delta;
         dE_ddelta=p.E0*ones(size(delta));
         dE_ddelta=repmat(dE_ddelta,size(m,1),1);

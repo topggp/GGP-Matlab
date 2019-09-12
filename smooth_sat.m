@@ -1,5 +1,11 @@
 function [s,ds]=smooth_sat(y,p,nc)
+%Smooth saturation function
+%face issues related to aggregation
 switch p.aggregation
+    case 'asymptotic'
+        xt=1;
+    case 'boolean'
+        xt=1;
      case 'p-norm'
        xt=1;
     case 'p-mean'
@@ -15,8 +21,5 @@ pp=100;
 s0=-log(exp(-pp)+1.0./(exp((pp.*0)./xt)+1.0))./pp;
 s=@(xs,a,pa)(-log(exp(-pa)+1.0./(exp((pa.*xs)./a)+1.0))./pa-s0)/(1-s0);
 ds=@(xs,a,pa)(exp((pa.*xs)./a).*1.0./(exp((pa.*xs)./a)+1.0).^2)./(a.*(exp(-pa)+1.0./(exp((pa.*xs)./a)+1.0)))/(1-s0);
-% syms a xs
 s=s(y,xt,pp);
 ds=ds(y,xt,pp);
-% s=((xt-2)/xt^3*y.^3+(3-2*xt)/xt^2*y.^2+y).*(y<=xt)+~(y<=xt);
-% ds=(3*(xt-2)/xt^3*y.^2+2*(3-2*xt)/xt^2*y+ones(size(y))).*(y<=xt);

@@ -4,6 +4,7 @@
 % 
 % In this approach geometric primitives are projected on a Finite Element 
 % Mesh and assembled together to build the solution. 
+% Author Simone Coniglio,12/09/2019
 %% Problem set-up
 % In this section of the Matlab code we define several *parameters* needed for 
 % the *Generalized Geometry Projection*.

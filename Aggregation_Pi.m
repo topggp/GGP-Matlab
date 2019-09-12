@@ -1,9 +1,15 @@
 function [Wa,dWa]=Aggregation_Pi(z,p)
-% function that make the aggregation of the value z and also compute
+% function that make the aggregation of the values in z and also compute
 % sensitivities
 zm=repmat(max(z),size(z,1),1);
 ka=p.ka;
 switch p.aggregation
+    case 'asymptotic'
+        Wa=sum(z);
+        dWa=ones(size(z));
+    case 'boolean'
+        Wa=1-prod(1-z);
+        dWa=repmat(prod(1-z),size(z,1),1)./(1-z);
     case 'p-norm'
         zp=p.zp;
         zm=zm+zp;
