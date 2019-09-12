@@ -1,7 +1,7 @@
 # GGP-Matlab
 GGP Matlab code
 This is supposed to be supplementary material for Generalized Geometry Projection Framework [1].
-The proposed framework make the use of Method of Moving Asymptotes solvers [2].
+The proposed framework make the use of Method of Moving Asymptotes optimization solvers [2].
 Moreover for Gauss quadrature we use the code in [3].
 In this folder you will find:
 1. **GGP.mlx**: Matlab live script that contains the main code and comments to run Genaralized Geometry Ptojection. At the first look the script may seems long. In reality many parts are copied by top88 matlab code [4]. Moreover graphics also take many lines but are not essential for the understanding of the code.
