@@ -9,7 +9,7 @@ switch p.aggregation
         dWa=ones(size(z));
     case 'boolean'
         Wa=1-prod(1-z);
-        dWa=repmat(prod(1-z),size(z,1),1)./(1-z);
+        dWa=repmat(prod(1-z.*(z~=1)),size(z,1),1)./(1-z.*(z~=1));
     case 'p-norm'
         zp=p.zp;
         zm=zm+zp;
