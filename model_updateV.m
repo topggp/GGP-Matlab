@@ -1,10 +1,10 @@
 function [rho,drho_ddelta,drho_dm]=model_updateV(delta,p,X)
+% update local densities
 m=X(6:6:end);
 nc=length(m);
 m=repmat(m(:),1,size(delta,2));
 switch p.method
     case 'MMC'
-        %update the Young Modulus on the base of delta
         rho=delta;
         drho_ddelta=ones(size(delta));
         drho_ddelta=repmat(drho_ddelta,size(m,1),1);
