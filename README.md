@@ -2,7 +2,7 @@
 GGP Matlab code
 This is supposed to be supplementary material for Generalized Geometry Projection Framework [1].
 The proposed framework make the use of Method of Moving Asymptotes optimization solvers [2].
-Moreover for Gauss quadrature we use the code in [3](https://fr.mathworks.com/matlabcentral/fileexchange/4540-legendre-gauss-quadrature-weights-and-nodes).
+Moreover for Gauss quadrature we use the code in [[3](https://fr.mathworks.com/matlabcentral/fileexchange/4540-legendre-gauss-quadrature-weights-and-nodes)].
 Three test cases are currently available in the provided code: the short cantilever beam, the MBB beam and the L-shape beam.
 Other test cases can be easily implemented as in [4]
 In this folder you will find:
