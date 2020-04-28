@@ -15,6 +15,8 @@ In this folder you will find:
 8. **mmasub.m**, **subsolv.m**, **kktcheck.m**: Matlab functions for MMA optimization solver and KKT residual norm [3].
 9. **norato_bar.m**: Matlab function that provides the distance of a component boundary from the component center as a function of the polar coordinate angle. This is needed for component plots.
 
+[![View GGP-Matlab on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://fr.mathworks.com/matlabcentral/fileexchange/75249-ggp-matlab)
+
 # References
 [1] Coniglio, Simone et al. "Generalized Geometry Projection: A unified approach for geometric feature based topology optimization." Archives of Computational Methods in Engineering, DOI: 10.1007/s11831-019-09362-8 (2019) 
 
